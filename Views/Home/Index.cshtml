@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "ЕстьКонтакт";
+}
+
+<div class="text-center">
+    <form method="post">
+        <label>Целое положительное число n (2 ≤ n ≤ 100) — <mark>количество студентов.</mark></label><br />
+        <input type="number" name="count" /><br /><br />
+        <label>
+            Последовательность a1, a2, ..., an (0 ≤ ai ≤ 100), <br />
+            где ai равно максимальному количеству сообщений,<br /> которые может
+            послать i-й студент.<br /> <mark>Введите последовательность через пробел -> 1 3 0 1</mark>
+        </label><br />
+        <input type="text" name="messages" /><br /><br />
+        <input type="submit" value="Отправить" />
+    </form>
+</div>
+<hr />
+<div class="text-center">
+    <p>Выходные данные:</p>
+    <table class="table">
+        <tbody>
+            @try
+            {
+                @foreach (var student in @ViewData["Response"] as List<string>)
+                {
+                    <tr><td>@student</td></tr>
+                }
+            }
+            catch
+            {
+                <tr><td>Здесь будет ответ :)</td></tr>
+            }
+        </tbody>
+    </table>
+</div>
