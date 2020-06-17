@@ -6005,11 +6005,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DNS\\source\\repos\\MvcProblemOfStudents\\MvcProblemOfStudents.csproj",
+      "projectUniqueName": "C:\\Users\\DNS\\Documents\\GitHub\\ASPNETCoreMVCAboutStudentsProblem\\MvcProblemOfStudents.csproj",
       "projectName": "MvcProblemOfStudents",
-      "projectPath": "C:\\Users\\DNS\\source\\repos\\MvcProblemOfStudents\\MvcProblemOfStudents.csproj",
+      "projectPath": "C:\\Users\\DNS\\Documents\\GitHub\\ASPNETCoreMVCAboutStudentsProblem\\MvcProblemOfStudents.csproj",
       "packagesPath": "C:\\Users\\DNS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DNS\\source\\repos\\MvcProblemOfStudents\\obj\\",
+      "outputPath": "C:\\Users\\DNS\\Documents\\GitHub\\ASPNETCoreMVCAboutStudentsProblem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

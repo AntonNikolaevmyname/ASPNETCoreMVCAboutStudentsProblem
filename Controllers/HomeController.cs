@@ -71,6 +71,7 @@ namespace MvcProblemOfStudents.Controllers
             {
                 studentGroupModel.StudentsList.Add(new StudentModel());
                 studentGroupModel.StudentsList[i].CanSendMessagesCount = canSendMessagesList[i];
+                studentGroupModel.StudentsList[i].Index = i + 1;
             }
 
             // Поликарп первым узнал новость.
@@ -111,8 +112,8 @@ namespace MvcProblemOfStudents.Controllers
                         {
                             studentModels[i + 1 + j].IsGetMessage = true;
                             studentModels[i].SentMessagesCount++;
-                            // Поскольку считаем с нуля, а в задаче с единицы...
-                            response.Add($"{i + 1} - {i + 1 + j + 1}");
+                            
+                            response.Add($"{studentModels[i].Index} - {studentModels[i + 1 + j].Index}");
                             studentGroupModel.AllMessagesCounter++;
                         }
                     }
